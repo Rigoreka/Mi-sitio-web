@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a title="Otra pagina" href="pagina1.html">Pagina 1</a>
+                <li><a href="pagina1.html">Pagina 2</a>
+                <li><a href="pagina1.html">Pagina 3</a>
+                <li><a href="pagina1.html">Pagina 4</a>
+                <li><a href="pagina1.html">Pagina 5</a>
+              </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Contactanos</h2>
+        <!-- Definimos el formulario de contacto -->
+
+        <form action="almacenar.php" method="post">
+            <h3>Llene todos los campos</h3>
+            <p>Nombre: 
+            <input type="text" name="txtNombre" id="txtNombre">
+        </p>
+         <p>Email: <input type="Email" name="txtEmail" id="txtEmail"></p>
+         <p>Comentario:<textarea name="txtComentario" id="txtComentario" cols="30" rows="30"></textarea>
+            <p>
+                País 
+                <select name="txtPais" id="txtPais">
+                    <option value="0">Seleccionar</option>
+                    <option value="1">Nicaragua</option>
+                    <option value="2">Francia</option>
+                    <option value="3">Alemania</option>
+                </select>
+            </p>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+    <footer>
+        <hr>
+        <p>Todos los derechos reservador &copy; 2023</p>
+    </footer>
+</body>
+</html>
